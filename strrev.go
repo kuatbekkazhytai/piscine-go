@@ -2,10 +2,17 @@ package main
 
 func StrRev(s string) string {
 
-	r := []rune(s)
-	for i, j := 0, len(r)-1; i < len(r)/2; i, j = i+1, j-1 {
-		r[i], r[j] = r[j], r[i]
+	bytes := []byte(s)
+	var len int = 0
+	var tempByte byte
+	for v := range bytes {
+		len++
+		v = v
 	}
-	return string(r)
-
+	for i := 0; i < len/2; i++ {
+		tempByte = bytes[i]
+		bytes[i] = bytes[len-i-1]
+		bytes[len-i-1] = tempByte
+	}
+	return string(bytes)
 }
