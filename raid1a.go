@@ -2,11 +2,6 @@ package main
 
 import "github.com/01-edu/z01"
 
-func main() {
-	Raid1a(5,3)
-}
-
-
 func Raid1a(x,y int) {
 	for i := 1; i <= y; i++ {
 		if i == y || i == 1 {
