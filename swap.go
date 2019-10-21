@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func Swap(a *int, b *int) {
 		tempa := *a

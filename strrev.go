@@ -1,18 +1,18 @@
-package main
+package piscine
 
 func StrRev(s string) string {
 
 	bytes := []byte(s)
-	var len int = 0
-	var tempByte byte
+	var abc int = 0
+	var numb byte
 	for v := range bytes {
-		len++
+		abc++
 		v = v
 	}
-	for i := 0; i < len/2; i++ {
-		tempByte = bytes[i]
-		bytes[i] = bytes[len-i-1]
-		bytes[len-i-1] = tempByte
+	for i := 0; i < abc/2; i++ {
+		numb = bytes[i]
+		bytes[i] = bytes[abc-i-1]
+		bytes[abc-i-1] = numb
 	}
 	return string(bytes)
 }
