@@ -1,22 +1,6 @@
 package piscine
 
-import (
-        "fmt"
-)
 
-func main() {
-        s := "12345"
-        s2 := "0000000012345"
-        s3 := "000000"
-
-        n := BasicAtoi(s)
-        n2 := BasicAtoi(s2)
-        n3 := BasicAtoi(s3)
-
-        fmt.Println(n)
-        fmt.Println(n2)
-        fmt.Println(n3)
-}
 func BasicAtoi(s string) int {
         change := []rune(s)
         var mean int = 0
