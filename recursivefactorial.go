@@ -8,4 +8,5 @@ func RecursiveFactorial(nb int) int {
 	} else {
 		return 0
 	}
+}	
 
