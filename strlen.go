@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 func StrLen(str string) int {
 	change := []rune(str)
 	var countlen int = 0
