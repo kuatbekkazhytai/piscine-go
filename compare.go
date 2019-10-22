@@ -17,9 +17,9 @@ func Compare(a, b string) int {
 			n = len2
 		}
 		for i := 0; i < n; i++ {
-			if runes1[i] > runes2[i] {
+			if rune1[i] > rune2[i] {
 				return 1
-			} else if runes1[i] < runes2[i] {
+			} else if rune1[i] < rune2[i] {
 				return -1
 			}
 		}
