@@ -14,7 +14,7 @@ func PrintNbrInOrder(n int) {
 		n = n / 10
 
 	}
-	SortIntegerTable(t)
+	SortIntegerTable(x)
 	for i := range x {
 		z01.PrintRune(rune('0' + x[i]))
 	}
