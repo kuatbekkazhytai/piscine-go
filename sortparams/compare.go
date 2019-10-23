@@ -1,4 +1,4 @@
-package piscine
+package main
 
 func Compare(a, b string) int {
 	len1 := StrLen(a)
