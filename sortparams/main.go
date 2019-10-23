@@ -9,7 +9,7 @@ func main() {
 	len := 0
 	t := ""
 	for i := range os.Args {
-		length = i
+		len = i
 	}
 	for i := 1; i <= len; i++ {
 		for j := i + 1; j <= len; j++ {
