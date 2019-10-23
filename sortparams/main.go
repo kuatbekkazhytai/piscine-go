@@ -20,7 +20,7 @@ func main() {
 			}
 		}
 		PrintStr(os.Args[i])
-
+		z01.PrintRune('\n')
 	}
-	z01.PrintRune('\n')
+	
 }
