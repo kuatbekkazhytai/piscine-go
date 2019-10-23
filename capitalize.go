@@ -2,17 +2,17 @@ package piscine
 
 func Capitalize(s string) string {
 	change := []rune(s)
-	FirstLetter := true
+	isFirstLetter := true
 	for i := range change {
-		if change[i] >= 'a' && change[i] <= 'z' && FirstLetter {
+		if change[i] >= 97 && change[i] <= 122 && isFirstLetter {
 			change[i] -= 32
-			FirstLetter = false
-		} else if (IsRuneDigit(change[i]) || (change[i] >= 'A' && change[i] <= 'Z')) && FirstLetter {
-			FirstLetter = false
-		} else if !FirstLetter && change[i] >= 'A' && change[i] <= 'Z' {
+			isFirstLetter = false
+		} else if (change[i] >= '0' && change[i] <= '9') || (change[i] >= 65 && change[i] <= 90) && isFirstLetter {
+			isFirstLetter = false
+		} else if !isFirstLetter && change[i] >= 65 && change[i] <= 90 {
 			change[i] += 32
-		} else if !FirstLetter && !IsRuneDigit(change[i]) && !IsRuneAlpha(change[i]) {
-			FirstLetter = true
+		} else if !isFirstLetter && !(change[i] >= '0' && change[i] <= '9') && !(change[i] >= 97 && change[i] <= 122 || change[i] >= 65 && change[i] <= 90) {
+			isFirstLetter = true
 		}
 	}
 	return string(change)
