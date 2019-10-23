@@ -1,6 +1,6 @@
 package piscine
 
-func IsAlpha(str string) bool {
+func IsLower(str string) bool {
 
 	change := []rune(str)
 	for i := range change {
