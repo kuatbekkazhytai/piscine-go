@@ -1,4 +1,4 @@
-package piscine
+package main
 
 func StrLen(str string) int {
 	change := []rune(str)
